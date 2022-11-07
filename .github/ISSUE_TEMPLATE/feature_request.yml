@@ -1,13 +1,13 @@
- ---
-name: Feature request
-about: Suggest an idea for AdGuard Browser Extension
 ---
 
-<!--  As an open-source project with a dedicated but small maintainer team, it can sometimes take a long time for issues to be addressed so please be patient and we will get back to you as soon as we can.
--->
-
-
- 
+name: 🐞 Bug report
+description: Create a feature request to help us improve AdGuard Browser Extension
+labels: ["Unsorted"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        As an open-source project with a dedicated but small maintainer team, it can sometimes take a long time for issues to be addressed so please be patient and we will get back to you as soon as we can. 
   - type: textarea
     id: what-happened
     attributes:
