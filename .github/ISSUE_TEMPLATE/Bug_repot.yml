@@ -2,7 +2,7 @@
 
 name: 🐞 Bug report
 description: Create a bug report to help us improve AdGuard Browser Extension
-labels: [Bug, Needs Triage]
+labels: []
 body:
   - type: markdown
     attributes:
@@ -11,9 +11,9 @@ body:
   - type: input
     id: app_version
     attributes:
-      label: AdGuard version
-      description: What version of our software are you running?
-      placeholder: for example, 4.1.22 beta
+      label: AdGuard Extension version
+      description: What version of our extension are you running?
+      placeholder: For example, 4.1.22 beta
     validations:
       required: true
   - type: input
@@ -21,7 +21,7 @@ body:
     attributes:
       label: Browser version
       description: What browser do you use?
-      placeholder: for example, Chrome 106
+      placeholder: For example, Chrome 106
     validations:
       required: true
   - type: input
@@ -29,16 +29,17 @@ body:
     attributes:
       label: OS version
       description: What operating system do you use?
-      placeholder: for example, macOS 12.4
+      placeholder: For example, macOS 12.4
     validations:
       required: true
   - type: dropdown
     id: filters
     attributes:
       label: What filters do you have enabled?
-      description: Select enabled filters from the list or enter URLs of any custom filters in the comment field below.
+      description: Select enabled filters from the list.
       multiple: true
       options:
+        - None
         - AdGuard Base filter
         - AdGuard Mobile Ads filter
         - AdGuard Chinese filter
@@ -122,8 +123,9 @@ body:
         - Dandelion Sprout's Nordic Filters
         - Dandelion Sprout's Annoyances List
         - Legitimate URL Shortener
+        - Others
     validations:
-      required: true
+      required: false
   - type: dropdown
     id: stealth
     attributes:
@@ -150,7 +152,7 @@ body:
     attributes:
       label: Issue Details
       description: What happened?
-      placeholder: Please include all relevant details about the environment you experienced the bug in
+      placeholder: Please include all relevant details about the issue you've experienced.
     validations:
       required: false
   - type: textarea
@@ -158,7 +160,7 @@ body:
     attributes:
       label: Expected Behavior
       description:
-      placeholder: A clear and concise description of what you expected to happen
+      placeholder: A clear and concise description of what you expected to happen.
     validations:
       required: false
   - type: textarea
@@ -166,7 +168,7 @@ body:
     attributes:
       label: Screenshots
       description:
-      placeholder: If applicable, add screenshots to help explain your problem
+      placeholder: If applicable add screenshots explaining your problem.
     validations:
       required: false
   - type: textarea
@@ -174,6 +176,6 @@ body:
     attributes:
       label: Additional Information
       description:
-      placeholder: Add any other context about the problem here
+      placeholder: Add any other context about the problem here.
     validations:
       required: false
