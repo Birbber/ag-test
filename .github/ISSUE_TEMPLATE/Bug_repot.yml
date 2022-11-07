@@ -3,11 +3,11 @@ description: Create a bug report to help us improve AdGuard Browser Extension
 title: "[BUG] <title>"
 labels: [Bug, Needs Triage]
 body:
-- type: input
-    id: version
-    attributes:
-      label: AdGuard version
-      description: What version of our software are you running?
-      placeholder: for example, 4.1.22 beta
-    validations:
-      required: true
+  - type: input
+      id: version
+      attributes:
+        label: AdGuard version
+        description: What version of our software are you running?
+        placeholder: for example, 4.1.22 beta
+      validations:
+        required: true
