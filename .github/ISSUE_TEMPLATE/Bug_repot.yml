@@ -178,7 +178,7 @@ body:
       placeholder: If applicable, add screenshots to help explain your problem
     validations:
       required: false
-   - type: textarea
+  - type: textarea
     id: additional
     attributes:
       label: additional_info
