@@ -15,3 +15,11 @@ body:
       placeholder: ex. email@example.com
     validations:
       required: false
+  - type: input
+      id: version
+      attributes:
+        label: AdGuard version
+        description: What version of our software are you running?
+        placeholder: for example, 4.1.22 beta
+      validations:
+        required: true
