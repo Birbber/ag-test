@@ -18,7 +18,7 @@ body:
     validations:
       required: false
   - type: input
-    id: version
+    id: app_version
     attributes:
       label: AdGuard version
       description: What version of our software are you running?
@@ -26,7 +26,7 @@ body:
     validations:
       required: true
   - type: input
-    id: version
+    id: br_version
     attributes:
       label: Browser version
       description: What browser do you use?
@@ -34,7 +34,7 @@ body:
     validations:
       required: true
   - type: input
-    id: version
+    id: os_version
     attributes:
       label: OS version
       description: What operating system do you use?
