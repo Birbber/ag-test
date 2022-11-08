@@ -168,9 +168,8 @@ body:
       value: |
         <details>
         <summary>Screenshot:</summary>
-        Drag & drop your screensot here
+        If applicable add screenshots explaining your problem.
         </details>
-      # placeholder: "If applicable add screenshots explaining your problem."
   - type: textarea
     id: additional
     attributes:
