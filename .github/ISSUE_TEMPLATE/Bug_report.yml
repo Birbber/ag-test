@@ -163,13 +163,19 @@ body:
       placeholder: A clear and concise description of what you expected to happen.
     validations:
       required: false
-  - type: markdown
+  - type: textarea
     attributes:
+      description: |
+        <details>
+        <summary>Screenshot:</summary>
+        If applicable add screenshots explaining your problem.
+        </details>
       value: |
         <details>
         <summary>Screenshot:</summary>
         If applicable add screenshots explaining your problem.
         </details>
+      render: markdown
   - type: textarea
     id: additional
     attributes:
