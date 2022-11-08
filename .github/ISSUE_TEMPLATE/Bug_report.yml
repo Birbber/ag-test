@@ -164,7 +164,9 @@ body:
     validations:
       required: false
   - type: textarea
+    id: screensmd
     attributes:
+      label: screens
       description: |
         <details>
         <summary>Screenshot:</summary>
