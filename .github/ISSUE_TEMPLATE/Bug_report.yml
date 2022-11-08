@@ -163,14 +163,10 @@ body:
       placeholder: A clear and concise description of what you expected to happen.
     validations:
       required: false
-  - type: textarea
-    id: screens
+  - type: markdown
     attributes:
-      label: Screenshots
-      description:
-      placeholder: If applicable add screenshots explaining your problem.
-    validations:
-      required: false
+      value: <details><summary>Screenshot:</summary>
+      placeholder: "If applicable add screenshots explaining your problem."
   - type: textarea
     id: additional
     attributes:
