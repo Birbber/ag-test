@@ -165,7 +165,7 @@ body:
     attributes:
       label: Issue Details
       description: What happened?
-      placeholder: Please include all relevant details about the issue you've experienced.
+      placeholder: Please describe the steps to reproduce the issue you've experienced.
     validations:
       required: true
   - type: textarea
