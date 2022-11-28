@@ -155,9 +155,9 @@ body:
   - type: textarea
     id: customer_id
     attributes:
-      label: Customer ID
-      description: Send us a diagnostic report through the application. Click on the gear icon in the app's main window, and choose "Support". You will get an auto-reply containing your Customer ID after sending a report.
-      placeholder:
+      label: Support ticket ID
+      description: If you've already sent us a diagnostic report through the application, share the ticket ID number. You can find it in an auto-reply email from AdGuard support after sending a report.
+      placeholder: Enter a ticket ID
     validations:
       required: false
   - type: textarea
