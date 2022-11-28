@@ -39,7 +39,6 @@ body:
       description: Select enabled filters from the list.
       multiple: true
       options:
-        - No filters
         - AdGuard Base filter
         - AdGuard Mobile Ads filter
         - AdGuard Chinese filter
