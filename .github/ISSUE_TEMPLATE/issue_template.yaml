@@ -157,8 +157,8 @@ body:
     id: customer_id
     attributes:
       label: Customer ID
-      description:
-      placeholder: Send us a diagnostic report through the application. Click on the gear icon in the app's main window, and choose "Support". You will get an auto-reply containing your Customer ID after sending a report.
+      description: Send us a diagnostic report through the application. Click on the gear icon in the app's main window, and choose "Support". You will get an auto-reply containing your Customer ID after sending a report.
+      placeholder:
     validations:
       required: false
   - type: textarea
@@ -168,7 +168,7 @@ body:
       description: What happened?
       placeholder: Please include all relevant details about the issue you've experienced.
     validations:
-      required: false
+      required: true
   - type: textarea
     id: how_it_should_be
     attributes:
