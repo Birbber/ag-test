@@ -165,9 +165,9 @@ body:
       label: Environment
       description: |
       examples:
-        - **OS**: Android 11
-        - **device**: Huawei
-        - **firmware**: INE-L21
+        - OS: Android 11
+        - Device: Huawei
+        - Firmware: INE-L21
     value: |
         - OS:
         - device:
