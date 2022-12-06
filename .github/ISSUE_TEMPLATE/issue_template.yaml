@@ -1,7 +1,7 @@
 ---
 
 name: 🐞 Bug report
-description: Create a bug report to help us improve AdGuard for Windows.
+description: Create a bug report to help us improve AdGuard for Android.
 labels: []
 body:
   - type: markdown
@@ -13,30 +13,30 @@ body:
     attributes:
       label: AdGuard version
       description: What version of our application are you running?
-      placeholder: For example, 7.11.2
+      placeholder: For example, 3.6.10
     validations:
       required: true
   - type: input
-    id: br_version
+    id: device
     attributes:
-      label: Browser version
-      description: What browser do you use?
-      placeholder: For example, Chrome 106
+      label: Device model
+      description: Tell us what device do you use.
+      placeholder: For example, Honor 20 pro
     validations:
       required: true
   - type: input
     id: os_version
     attributes:
       label: OS version
-      description: What operating system do you use?
-      placeholder: For example, Windows 11, 21H2, build 22000.1219
+      description: What operating system version do you use?
+      placeholder: For example, android 11
     validations:
       required: true
   - type: dropdown
     id: filters
     attributes:
       label: What filters do you have enabled?
-      description: Select enabled filters from the list.
+      description: Select enabled filters from the list. You can skip this step if it's not relevant.
       multiple: true
       options:
         - AdGuard Base filter
@@ -129,7 +129,7 @@ body:
     id: stealth
     attributes:
       label: What Stealth Mode options do you have enabled?
-      description: Select any of these options if you have them enabled in Stealth Mode.
+      description: Select any of these options if you have them enabled in Stealth Mode. You can skip this step if it's not relevant.
       multiple: true
       options:
         - Hide your search queries
@@ -153,13 +153,28 @@ body:
         - Remove X-client-Data header from HTTP request
         - Protect from DPI
   - type: textarea
-    id: customer_id
+    id: root_access
     attributes:
-      label: Support ticket ID
-      description: If you've already sent us a diagnostic report through the application, share the ticket ID number. You can find it in an auto-reply email from AdGuard support after sending a report.
+      label: Root access
+      description: 
       placeholder: Enter a ticket ID
     validations:
       required: false
+  - type: textarea
+  attributes:
+    label: Environment
+    description: |
+      examples:
+        - **OS**: Android 11
+        - **device**: Huawei
+        - **firmware**: INE-L21
+    value: |
+        - OS:
+        - device:
+        - firmware:
+    render: markdown
+  validations:
+    required: false
   - type: textarea
     id: what-happened
     attributes:
