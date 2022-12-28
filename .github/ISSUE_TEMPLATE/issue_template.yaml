@@ -36,8 +36,8 @@ body:
           - **Firmware**: INE-L21
       value: |
           - OS:
-          - device:
-          - firmware:
+          - Device:
+          - Firmware:
       render: markdown
     validations:
       required: false
@@ -46,7 +46,7 @@ body:
       label: Root access
       description: Do you have root privileges?
       options:
-        - label: Yes, I have.
+        - label: Yes, I have it.
     validations:
       required: false
   - type: dropdown
