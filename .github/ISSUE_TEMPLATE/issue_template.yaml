@@ -42,6 +42,14 @@ body:
       placeholder: For example, Android 11
     validations:
       required: true
+  - type: checkboxes
+    attributes:
+      label: Root access
+      description: Do you have root privileges?
+      options:
+        - label: Yes, I have.
+    validations:
+      required: false
   - type: dropdown
     id: filters
     attributes:
@@ -162,14 +170,6 @@ body:
         - Hide your IP address
         - Remove X-client-Data header from HTTP request
         - Protect from DPI
-  - type: checkboxes
-    attributes:
-      label: Root access
-      description: Do you have root access
-      options:
-        - label: I have root privileges
-    validations:
-      required: false
   - type: textarea
     attributes:
       label: Environment
