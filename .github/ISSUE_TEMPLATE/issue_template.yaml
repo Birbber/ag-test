@@ -42,10 +42,10 @@ body:
       description: |
         examples:
           - **OS**: 15.5
-          - **Device**: iphone 12
+          - **Device and storage size**: iphone 12, 64GB
       value: |
           - OS:
-          - Device:
+          - Device and storage size:
       render: markdown
     validations:
       required: false
