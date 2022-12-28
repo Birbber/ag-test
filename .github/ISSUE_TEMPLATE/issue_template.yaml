@@ -39,7 +39,7 @@ body:
     attributes:
       label: OS version
       description: What operating system version do you use?
-      placeholder: For example, android 11
+      placeholder: For example, Android 11
     validations:
       required: true
   - type: dropdown
@@ -162,12 +162,12 @@ body:
         - Hide your IP address
         - Remove X-client-Data header from HTTP request
         - Protect from DPI
-  - type: textarea
-    id: root_access
+  - type: checkboxes
     attributes:
-      label: Root access
+      label: Do you have root access?
       description:
-      placeholder:
+      options:
+        - label: I have root privileges
     validations:
       required: false
   - type: textarea
