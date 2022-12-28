@@ -157,7 +157,7 @@ body:
     attributes:
       label: Root access
       description:
-      placeholder: Enter a ticket ID
+      placeholder:
     validations:
       required: false
   - type: textarea
