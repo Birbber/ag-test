@@ -164,8 +164,8 @@ body:
         - Protect from DPI
   - type: checkboxes
     attributes:
-      label: Do you have root access?
-      description:
+      label: Root access
+      description: Do you have root access
       options:
         - label: I have root privileges
     validations:
