@@ -1,7 +1,7 @@
 ---
 
 name: 🐞 Bug report
-description: Create a bug report to help us improve AdGuard Browser Extension.
+description: Create a bug report to help us improve AdGuard for Android.
 labels: []
 body:
   - type: markdown
@@ -11,35 +11,34 @@ body:
   - type: input
     id: app_version
     attributes:
-      label: AdGuard Extension version
-      description: What version of our extension are you running?
-      placeholder: For example, 4.1.22 beta
+      label: AdGuard version
+      description: What version of our application are you running?
+      placeholder: For example, 3.6.10
     validations:
       required: true
   - type: input
-    id: br_version
+    id: device
     attributes:
-      label: Browser version
-      description: What browser do you use?
-      placeholder: For example, Chrome 106
+      label: Device model
+      description: Tell us what device do you use.
+      placeholder: For example, Honor 20 pro
     validations:
       required: true
   - type: input
     id: os_version
     attributes:
       label: OS version
-      description: What operating system do you use?
-      placeholder: For example, macOS 12.4
+      description: What operating system version do you use?
+      placeholder: For example, android 11
     validations:
       required: true
   - type: dropdown
     id: filters
     attributes:
       label: What filters do you have enabled?
-      description: Select enabled filters from the list.
+      description: Select enabled filters from the list. You can skip this step if it's not relevant.
       multiple: true
       options:
-        - No filters
         - AdGuard Base filter
         - AdGuard Mobile Ads filter
         - AdGuard Chinese filter
@@ -130,26 +129,60 @@ body:
     id: stealth
     attributes:
       label: What Stealth Mode options do you have enabled?
-      description: Select any of these options if you have them enabled in Stealth Mode.
+      description: Select any of these options if you have them enabled in Stealth Mode. You can skip this step if it's not relevant.
       multiple: true
       options:
-        - Block trackers
-        - Remove tracking parameters
         - Hide your search queries
         - Send Do-Not-Track signals
+        - Strip URLs of tracking parameters
         - Self-destruction of third-party cookies
         - Self-destruction of first-party cookies
-        - Hide Referrer from third parties
-        - Remove X-Client-Data header
+        - Disable cache for third-party requests
+        - Block the third-party Authorization header
         - Disable WebRTC
+        - Block Push API
+        - Block Location API
+        - Block Flash
+        - Disable Windows Telemetry
+        - Turn off Advertising ID
+        - Disable Microsoft Defender automatic samples submission
+        - Disable WAP Push Message Routing Service
+        - Hide your Referrer from third-parties
+        - Hide your User Agent
+        - Hide your IP address
+        - Remove X-client-Data header from HTTP request
+        - Protect from DPI
+  - type: textarea
+    id: root_access
+    attributes:
+      label: Root access
+      description:
+      placeholder:
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: Environment
+      description: |
+      examples:
+        - OS: Android 11
+        - Device: Huawei
+        - Firmware: INE-L21
+    value: |
+        - OS:
+        - device:
+        - firmware:
+    render: markdown
+    validations:
+      required: false
   - type: textarea
     id: what-happened
     attributes:
       label: Issue Details
       description: What happened?
-      placeholder: Please include all relevant details about the issue you've experienced.
+      placeholder: Please describe the steps to reproduce the issue you've experienced.
     validations:
-      required: false
+      required: true
   - type: textarea
     id: how_it_should_be
     attributes:
