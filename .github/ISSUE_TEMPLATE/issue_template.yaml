@@ -27,7 +27,7 @@ body:
     validations:
       required: true
   - type: dropdown
-    id: filters
+    id: tunnel_mode
     attributes:
       label: Tunnel mode
       description:
