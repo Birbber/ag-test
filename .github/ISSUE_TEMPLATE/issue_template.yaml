@@ -181,13 +181,13 @@ body:
       label: Environment
       description: |
         examples:
-          - **OS**: Ubuntu 20.04
-          - **Node**: 13.14.0
-          - **npm**: 7.6.3
+          - **OS**: Android 11
+          - **Device**: Huawei
+          - **Firmware**: INE-L21
       value: |
           - OS:
-          - Node:
-          - npm:
+          - device:
+          - firmware:
       render: markdown
     validations:
       required: false
