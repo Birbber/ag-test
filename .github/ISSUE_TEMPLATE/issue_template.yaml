@@ -152,14 +152,14 @@ body:
         - Hide your IP address
         - Remove X-client-Data header from HTTP request
         - Protect from DPI
-  # - type: textarea
-  #   id: root_access
-  #   attributes:
-  #     label: Root access
-  #     description:
-  #     placeholder:
-  #   validations:
-  #     required: false
+  - type: textarea
+    id: root_access
+    attributes:
+      label: Root access
+      description:
+      placeholder:
+    validations:
+      required: false
   # - type: textarea
   #   attributes:
   #     label: Environment
