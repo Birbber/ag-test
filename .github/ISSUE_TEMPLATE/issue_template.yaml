@@ -1,7 +1,7 @@
 ---
 
 name: 🐞 Bug report
-description: Create a bug report to help us improve AdGuard for Android.
+description: Create a bug report to help us improve AdGuard for iOS.
 labels: []
 body:
   - type: markdown
@@ -23,30 +23,30 @@ body:
     attributes:
       label: AdGuard version
       description: What version of our application are you running?
-      placeholder: For example, 3.6.10
+      placeholder: For example, 4.4.3
     validations:
       required: true
+  - type: dropdown
+    id: filters
+    attributes:
+      label: Tunnel mode
+      description:
+      multiple: false
+      options:
+        - Full-Tunnel
+        - Full-Tunnel (without VPN icon)
+        - Split-Tunnel
   - type: textarea
     attributes:
       label: Environment
       description: |
         examples:
-          - **OS**: Android 11
-          - **Device**: Huawei
-          - **Firmware**: INE-L21
+          - **OS**: 15.5
+          - **Device**: iphone 12
       value: |
           - OS:
           - Device:
-          - Firmware:
       render: markdown
-    validations:
-      required: false
-  - type: checkboxes
-    attributes:
-      label: Root access
-      description: Do you have root privileges?
-      options:
-        - label: Yes, I have it.
     validations:
       required: false
   - type: dropdown
@@ -139,36 +139,9 @@ body:
         - Dandelion Sprout's Nordic Filters
         - Dandelion Sprout's Annoyances List
         - Legitimate URL Shortener
-        - Others
+        - Custom
     validations:
       required: false
-  - type: dropdown
-    id: stealth
-    attributes:
-      label: What Stealth Mode options do you have enabled?
-      description: Select any of these options if you have them enabled in Stealth Mode. You can skip this step if it's not relevant.
-      multiple: true
-      options:
-        - Hide your search queries
-        - Send Do-Not-Track signals
-        - Strip URLs of tracking parameters
-        - Self-destruction of third-party cookies
-        - Self-destruction of first-party cookies
-        - Disable cache for third-party requests
-        - Block the third-party Authorization header
-        - Disable WebRTC
-        - Block Push API
-        - Block Location API
-        - Block Flash
-        - Disable Windows Telemetry
-        - Turn off Advertising ID
-        - Disable Microsoft Defender automatic samples submission
-        - Disable WAP Push Message Routing Service
-        - Hide your Referrer from third-parties
-        - Hide your User Agent
-        - Hide your IP address
-        - Remove X-client-Data header from HTTP request
-        - Protect from DPI
   - type: textarea
     id: what-happened
     attributes:
