@@ -9,7 +9,6 @@ body:
       label: Please answer the following questions for yourself before submitting an issue.
       description:
       options:
-        - label: I am running the latest version
         - label: I checked the documentation and found no answer
         - label: I checked to make sure that this issue has not already been filed
     validations:
@@ -138,15 +137,22 @@ body:
       description: Select any of these options if you have them enabled in Stealth Mode.
       multiple: true
       options:
-        - Block trackers
-        - Remove tracking parameters
         - Hide your search queries
         - Send websites signals not to track you
+        - Remove tracking parameters
         - Self-destruction of third-party cookies
         - Self-destruction of first-party cookies
+        - Disable caching for third-party requests
+        - Block third-party Authorization header
+        - Block WebRTC
+        - Block Push API
+        - Block Location API
+        - Block JAVA
         - Hide Referrer from third parties
+        - Hide your User-Agent
+        - Mask your IP addreess
         - Remove X-Client-Data header
-        - Disable WebRTC
+        - Protect from DPI
   - type: textarea
     id: what-happened
     attributes:
@@ -195,7 +201,7 @@ body:
     attributes:
       label: Client ID
       description: Send us a diagnostic report through the application, click on the gear icon in the app's main window, and choose "Support". You will get an auto-reply with your Customer ID (ticket number) after sending a report.
-      placeholder: 
+      placeholder:
     validations:
       required: false
   - type: textarea
@@ -205,4 +211,4 @@ body:
       description:
       placeholder: Any specific potentially conflicting software installed (e.g. antiviruses, firewalls, traffic counters, cleaners).
     validations:
-      required: false  
+      required: false
