@@ -162,7 +162,7 @@ body:
       description:
       placeholder: A clear and concise description of what you expected to happen.
       value: |
-      Steps to reproduce:
+        Steps to reproduce:
     validations:
       required: false
   - type: textarea
