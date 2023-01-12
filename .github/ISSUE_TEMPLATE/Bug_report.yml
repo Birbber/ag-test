@@ -4,6 +4,16 @@ name: 🐞 Bug report
 description: Create a bug report to help us improve AdGuard for macOS.
 labels: []
 body:
+  - type: checkboxes
+    attributes:
+      label: Please answer the following questions for yourself before submitting an issue.
+      description:
+      options:
+        - label: I am running the latest version
+        - label: I checked the documentation and found no answer
+        - label: I checked to make sure that this issue has not already been filed
+    validations:
+      required: true
   - type: markdown
     attributes:
       value: |
@@ -151,6 +161,8 @@ body:
       label: Expected Behavior
       description:
       placeholder: A clear and concise description of what you expected to happen.
+      value: |
+      Steps to reproduce:
     validations:
       required: false
   - type: textarea
@@ -182,8 +194,8 @@ body:
     id: client_id
     attributes:
       label: Client ID
-      description:
-      placeholder: Send us a diagnostic report through the application, click on the gear icon in the app's main window, and choose "Support". You will get an auto-reply with your Customer ID (ticket number) after sending a report.
+      description: Send us a diagnostic report through the application, click on the gear icon in the app's main window, and choose "Support". You will get an auto-reply with your Customer ID (ticket number) after sending a report.
+      placeholder: 
     validations:
       required: false
   - type: textarea
