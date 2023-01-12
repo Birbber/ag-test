@@ -159,6 +159,11 @@ body:
       label: Issue Details
       description: Steps to reproduce the issue
       placeholder: Please include all relevant details about the issue you've experienced.
+      value: |
+        Steps to reproduce:
+        1.
+        2.
+        3.
     validations:
       required: false
   - type: textarea
@@ -167,8 +172,6 @@ body:
       label: Expected Behavior
       description:
       placeholder: A clear and concise description of what you expected to happen.
-      value: |
-        Steps to reproduce:
     validations:
       required: false
   - type: textarea
