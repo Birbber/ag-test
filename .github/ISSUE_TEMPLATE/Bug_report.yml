@@ -157,15 +157,15 @@ body:
     id: what-happened
     attributes:
       label: Issue Details
-      description: Steps to reproduce the issue
-      placeholder: Please include all relevant details about the issue you've experienced.
+      description: Please provide a set of steps to reproduce the issue.
+      placeholder: 
       value: |
         Steps to reproduce:
         1.
         2.
         3.
     validations:
-      required: false
+      required: true
   - type: textarea
     id: how_it_should_be
     attributes:
@@ -181,7 +181,7 @@ body:
       description:
       placeholder: A clear description of what happened instead.
     validations:
-      required: false
+      required: true
   - type: textarea
     id: screens
     attributes:
