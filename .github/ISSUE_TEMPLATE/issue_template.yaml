@@ -40,7 +40,7 @@ body:
     attributes:
       label: Environment
       description: |
-        examples:
+        Examples:
           - **OS**: 15.5
           - **Device and storage size**: iphone 12, 64GB
       value: |
