@@ -4,14 +4,10 @@ daysUntilStale: 60
 daysUntilClose: 7
 # Issues with these labels will never be considered stale
 exemptLabels:
-  - 'Android bug'
   - 'Bug'
   - 'Compatibility'
   - 'Enhancement'
-  - 'Feature Request'
-  - 'Feature_Request'
-  - 'feature request'
-  - 'feature_request'
+  - 'Feature request'
   - 'Localization'
 # Label to use when marking an issue as stale
 staleLabel: 'Wontfix'
