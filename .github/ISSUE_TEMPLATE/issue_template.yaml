@@ -166,8 +166,17 @@ body:
     id: screens
     attributes:
       label: Screenshots
-      description:
+      description: |
+        If applicable add screenshots explaining your problem.
+        You can drag and drop images or paste them from clipboard.
+        Use `<details> </details>` tag to hide screenshots under the spoiler.
       placeholder: If applicable add screenshots explaining your problem.
+      value: |
+          <details><summary>Screenshot 1:</summary>
+
+          <!-- paste screenshot here -->
+
+          </details>
     validations:
       required: false
   - type: textarea
