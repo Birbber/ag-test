@@ -33,8 +33,9 @@ body:
       description:
       multiple: false
       options:
-        - General
-        - Integrated
+        - VPN
+        - SOCKS5
+        - Integration with AdGuard
   - type: textarea
     attributes:
       label: Environment
@@ -62,8 +63,13 @@ body:
     id: what-happened
     attributes:
       label: Issue Details
-      description: What happened?
-      placeholder: Please describe the steps to reproduce the issue you've experienced.
+      description: Please provide a set of steps to reproduce the issue.
+      placeholder:
+      value: |
+        Steps to reproduce:
+        1.
+        2.
+        3.
     validations:
       required: true
   - type: textarea
