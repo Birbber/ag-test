@@ -39,7 +39,7 @@ body:
     attributes:
       label: Environment
       description: |
-        examples:
+        Examples:
           - **OS**: Android 11
           - **Device**: Huawei
           - **Firmware**: INE-L21
