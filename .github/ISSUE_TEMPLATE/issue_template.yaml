@@ -1,7 +1,7 @@
 ---
 
 name: 🐞 Bug report
-description: Create a bug report to help us improve AdGuard VPN for Mac.
+description: Create a bug report to help us improve AdGuard VPN for Android.
 labels: []
 body:
   - type: markdown
@@ -23,22 +23,41 @@ body:
     attributes:
       label: AdGuard VPN version
       description: What version of our application are you running?
-      placeholder: For example, 2.0.2.304 beta
+      placeholder: For example, 2.2.3
     validations:
       required: true
+  - type: dropdown
+    id: tunnel_mode
+    attributes:
+      label: Operating mode
+      description:
+      multiple: false
+      options:
+        - General
+        - Integrated
   - type: textarea
     attributes:
       label: Environment
       description: |
-        Examples:
-          - **OS**: Monterey 12.4
-          - **Other network-level software**: AdGuard (or any Antivirus, Firewall) 
+        examples:
+          - **OS**: Android 11
+          - **Device**: Huawei
+          - **Firmware**: INE-L21
       value: |
           - OS:
-          - Other network-level software:
+          - Device:
+          - Firmware:
       render: markdown
     validations:
       required: true
+  - type: checkboxes
+    attributes:
+      label: Root access
+      description: Do you have root privileges?
+      options:
+        - label: Yes, I have it.
+    validations:
+      required: false
   - type: textarea
     id: what-happened
     attributes:
