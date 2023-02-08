@@ -21,7 +21,7 @@ body:
   - type: input
     id: app_version
     attributes:
-      label: AdGuard VPN version
+      label: AdGuard version
       description: What version of our application are you running?
       placeholder: For example, 7.11.2
     validations:
