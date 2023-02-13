@@ -23,9 +23,18 @@ body:
     attributes:
       label: AdGuard VPN version
       description: What version of our application are you running?
-      placeholder: For example, 7.11.2
+      placeholder: For example, 2.0.784
     validations:
       required: true
+  - type: dropdown
+    id: tunnel_mode
+    attributes:
+      label: Operating mode
+      description:
+      multiple: false
+      options:
+        - VPN
+        - SOCKS5    
   - type: textarea
     attributes:
       label: Environment
