@@ -1,44 +1,55 @@
 ---
 
 name: 🐞 Bug report
-description: Create a bug report to help us improve AdGuard for Mac.
+description: Create a bug report to help us improve AdGuard for Windows.
 labels: []
 body:
   - type: markdown
     attributes:
       value: |
         Thanks for taking the time to fill out this bug report!
+  - type: checkboxes
+    attributes:
+      label: Please answer the following questions for yourself before submitting an issue.
+      description:
+      options:
+        - label: I am running the latest version
+        - label: I checked the documentation and found no answer
+        - label: I checked to make sure that this issue has not already been filed
+    validations:
+      required: true
   - type: input
     id: app_version
     attributes:
       label: AdGuard version
       description: What version of our application are you running?
-      placeholder: For example, 2.10
+      placeholder: For example, 7.11.2
     validations:
       required: true
-  - type: input
-    id: br_version
+  - type: textarea
     attributes:
-      label: Browser version
-      description: What browser do you use?
-      placeholder: For example, Safari 16.3 (18614.4.6.1.5)
-    validations:
-      required: true
-  - type: input
-    id: os_version
-    attributes:
-      label: OS version
-      description: What operating system do you use?
-      placeholder: For example, macOS Monterey 12.4
+      label: Environment
+      description: |
+        Examples:
+          - **OS**: Windows 11, 21H2, build 22000.1219
+          - **Browser**: Chrome 106
+      value: |
+          - OS:
+          - Browser:
+      render: markdown
     validations:
       required: true
   - type: dropdown
     id: filters
     attributes:
       label: What filters do you have enabled?
-      description: Select enabled filters from the list.
+      description: |
+        Select enabled filters from the list if they are related to the application bug.
+        If the issue is related to the filtering (missed ads, cookie, etc.)
+        use the [Web Reporting Tool](https://kb.adguard.com/en/technical-support/reporting-tool) please.
       multiple: true
       options:
+        - No filters
         - AdGuard Base filter
         - AdGuard Mobile Ads filter
         - AdGuard Chinese filter
@@ -53,6 +64,11 @@ body:
         - AdGuard URL Tracking filter
         - AdGuard Social Media filter
         - AdGuard Annoyances filter
+        - AdGuard Cookie Notices filter
+        - AdGuard Popups filter
+        - AdGuard Mobile App Banners filter
+        - AdGuard Widgets filter
+        - AdGuard Other Annoyances filter
         - AdGuard DNS filter
         - AdGuard Experimental filter
         - Filter unblocking search ads and self-promotion
@@ -84,24 +100,18 @@ body:
         - Xfiles
         - Adblock Warning Removal List
         - Online Malicious URL Blocklist
-        - Spam404
         - RU AdList - Counters
         - ABPVN List
         - Fanboy's Enhanced Tracking List
         - Official Polish filters for AdBlock, uBlock Origin & AdGuard
         - Polish GDPR-Cookies Filters
         - Estonian List
-        - ChinaList+EasyList
         - CJX's Annoyances List
         - Polish Social Filters
-        - Adblock-Persian list
-        - Fanboy's Swedish
         - Fanboy's Anti-Facebook List
-        - Fanboy's Vietnamese
         - List-KR
         - xinggsf
         - I don't care about cookies
-        - Fanboy's Spanish\/Portuguese
         - EasyList Spanish
         - KAD - Anti-Scam
         - Adblock List for Finland
@@ -111,7 +121,6 @@ body:
         - Polish Annoyances Filters
         - Polish Anti Adblock Filters
         - Fanboy's Anti-thirdparty Fonts
-        - BarbBlock
         - EasyList Cookie List
         - NoCoin Filter List
         - Frellwit's Swedish Filter
@@ -122,6 +131,8 @@ body:
         - Dandelion Sprout's Nordic Filters
         - Dandelion Sprout's Annoyances List
         - Legitimate URL Shortener
+        - Dandelion Sprout's Serbo-Croatian List
+        - IndianList
         - Others
     validations:
       required: false
@@ -139,14 +150,18 @@ body:
         - Self-destruction of first-party cookies
         - Disable cache for third-party requests
         - Block the third-party Authorization header
-        - Block WebRTC
+        - Disable WebRTC
         - Block Push API
         - Block Location API
-        - Block Java
-        - Hide Referrer from third-parties
+        - Block Flash
+        - Disable Windows Telemetry
+        - Turn off Advertising ID
+        - Disable Microsoft Defender automatic samples submission
+        - Disable WAP Push Message Routing Service
+        - Hide your Referrer from third-parties
         - Hide your User Agent
-        - Mask your IP address
-        - Remove X-client-Data header
+        - Hide your IP address
+        - Remove X-client-Data header from HTTP request
         - Protect from DPI
   - type: textarea
     id: customer_id
@@ -168,7 +183,7 @@ body:
         2.
         3.
     validations:
-      required: true  
+      required: true
   - type: textarea
     id: how_it_should_be
     attributes:
