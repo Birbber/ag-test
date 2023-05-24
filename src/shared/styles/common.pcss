@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    outline: none;
+    text-rendering: geometricPrecision;
+}
+
+#root,
+html,
+body {
+    height: 100%;
+}
+
+html {
+    color-scheme: light dark;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+/* fix for mozilla issue when popup icon is in overflow menu */
+/* https://github.com/AdguardTeam/BrowserAssistant/issues/48 */
+@-moz-document url-prefix() {
+    html {
+        min-height: 480px;
+        width: 320px;
+        margin: auto;
+    }
+}
+
+body {
+    font-family: var(--font-primary);
+    background-color: var(--white);
+    font-size: 2.5rem;
+    font-weight: 400;
+    transition: min-height 0.15s linear;
+    text-overflow: ellipsis;
+}

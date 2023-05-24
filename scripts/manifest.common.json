@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+    "name": "__MSG_name__",
+    "author": "Adguard Software Ltd",
+    "version": "__version__",
+    "description": "__MSG_description__",
+    "icons": {
+        "16": "assets/images/icons/green-16.png",
+        "48": "assets/images/icons/green-48.png",
+        "128": "assets/images/icons/green-128.png"
+    },
+    "options_ui": {
+        "page": "options-ui.html",
+        "chrome_style": true,
+        "browser_style": true
+    },
+    "permissions": [
+        "nativeMessaging",
+        "tabs",
+        "activeTab",
+        "contextMenus",
+        "storage"
+    ]
+}

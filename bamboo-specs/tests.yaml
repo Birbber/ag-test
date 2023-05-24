@@ -1,0 +1,77 @@
+---
+version: 2
+plan:
+  project-key: ADGEXT
+  key: BATESTSPECS
+  name: browser assistant - test
+variables:
+  dockerNode: adguard/node-ssh:14.18--2
+
+stages:
+  - Test:
+      manual: 'false'
+      final: 'false'
+      jobs:
+        - Test
+
+Test:
+  key: TEST
+  other:
+    clean-working-dir: true
+  docker:
+    image: ${bamboo.dockerNode}
+    volumes:
+      ${system.YARN_DIR}: "${bamboo.cacheYarn}"
+  tasks:
+    - checkout:
+        force-clean-build: 'true'
+    - script:
+        interpreter: SHELL
+        scripts:
+          - |-
+            set -x
+            set -e
+
+            # Fix mixed logs
+            exec 2>&1
+
+            ls -alt
+
+            yarn install ${bamboo.varsYarn}
+            yarn dev
+            rm -rf node_modules
+  artifacts:
+    - name: build.txt
+      location: build/dev
+      pattern: build.txt
+      shared: true
+      required: true
+    - name: chrome.zip
+      location: build/dev
+      pattern: chrome.zip
+      shared: true
+      required: true
+    - name: firefox.zip
+      location: build/dev
+      pattern: firefox.zip
+      shared: true
+      required: true
+    - name: edge.zip
+      location: build/dev
+      pattern: edge.zip
+      shared: true
+      required: true
+  requirements:
+    - adg-docker: 'true'
+
+branches:
+  create: for-pull-request
+  delete:
+    after-deleted-days: '1'
+    after-inactive-days: '5'
+  link-to-jira: 'true'
+
+notifications: []
+labels: []
+other:
+  concurrent-build-plugin: system-default
