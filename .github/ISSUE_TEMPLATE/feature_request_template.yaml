@@ -1,13 +1,9 @@
 ---
 
 name: 🌱 Feature request
-description: Create a feature request to help us improve AdGuard Browser Assistant.
-labels: ["Feature Request"]
+description: Create a feature request to help us improve AdGuard VPN Browser Extension.
+labels: ['Feature request']
 body:
-  - type: markdown
-    attributes:
-      value: |
-        As an open-source project with a dedicated but small maintainer team, it can sometimes take a long time for issues to be addressed so please be patient and we will get back to you as soon as we can.
   - type: textarea
     id: what-happened
     attributes:
