@@ -1,15 +1,11 @@
 # AdGuard MV3 Extension
 &nbsp;
-<br/>
+<br>
 <p align="center">
     <picture>
         <source media="(prefers-color-scheme: dark)" srcset="https://cdn.adguard.com/public/Adguard/Common/Logos/ext_dark.svg" width="300px" alt="AdGuard Browser Extension" />
         <img src="https://cdn.adguard.com/public/Adguard/Common/Logos/ext.svg" width="300px" alt="AdGuard Browser Extension"/>
     </picture>
-</p>
-<h3 align="center">Ad blocker with advanced privacy protection features</h3>
-<p align="center">
-    AdGuard is a fast and lightweight ad blocking browser extension<br/>that effectively blocks all types of ads and trackers.
 </p>
 <div align="center">
     <a href="https://adguard.com/">AdGuard Website</a> |
