@@ -164,7 +164,7 @@ body:
     id: what-happened
     attributes:
       label: Issue Details
-      pdescription: Please describe the steps to reproduce the issue you've experienced.
+      description: Please describe the steps to reproduce the issue you've experienced.
       placeholder:
       value: |
         Steps to reproduce:
