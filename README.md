@@ -27,8 +27,8 @@
 
 <p align="center">
     <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="https://cdn.adguard.com/public/Adguard/Common/adguard_extension_settings_dark.png" width="600px" alt="AdGuard Browser Extension" />
-        <img src="https://cdn.adguard.com/public/Adguard/Common/adguard_extension_settings_white.png" width="600px" alt="AdGuard Browser Extension"/>
+        <source media="(prefers-color-scheme: dark)" srcset="https://cdn.adguard.com/public/Adguard/Common/adguard_extension_settings_dark.png" width="900px" alt="AdGuard Browser Extension" />
+        <img src="https://cdn.adguard.com/public/Adguard/Common/adguard_extension_settings_white.png" width="900px" alt="AdGuard Browser Extension"/>
     </picture>
 </p>
 
